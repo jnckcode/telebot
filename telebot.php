@@ -58,13 +58,13 @@ sendMessage($chatId, "<i>$dec</i>");
 #---------------[HEX]------------------#
 elseif ((strpos($message, "!hexbin") === 0)||(strpos($message, "/hexbin") === 0)){
 $hexbin = substr($message, 8);
-$2bin=hex2bin($hexbin);
-sendMessage($chatId, "<i>$2bin</i>");
+$bin2=hex2bin($hexbin);
+sendMessage($chatId, "<i>$bin2</i>");
 }
 elseif ((strpos($message, "!binhex") === 0)||(strpos($message, "/binhex") === 0)){
 $binhex = substr($message, 8);
-$2hex=bin2hex($binhex);
-sendMessage($chatId, "<i>$2hex</i>");
+$hex2=bin2hex($binhex);
+sendMessage($chatId, "<i>$hex2</i>");
 }
 #---------------------------------------------[ RESPONSES ]------------------------------------#
 
