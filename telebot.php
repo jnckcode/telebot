@@ -32,7 +32,7 @@ sendMessage($chatId, "<i>YOUR ID: <code>$userId</code>%0AFirst Name: $firstname%
 }
 #---------------[MAIL RND]------------------#
 elseif ((strpos($message, "!mail") === 0)||(strpos($message, "/mail") === 0)){
-$count= 15;//jumlah
+$count= 1;//jumlah
 //Generate Looping Data
 for ($i=0; $i < $count; $i++){ 
 	$name=substr(str_shuffle('abcdefghijklmnopqrstuvwxyz'),0,6);
