@@ -32,9 +32,9 @@ sendMessage($chatId, "<i>YOUR ID: <code>$userId</code>%0AFirst Name: $firstname%
 }
 #---------------[MAIL RND]------------------#
 elseif ((strpos($message, "!mail") === 0)||(strpos($message, "/mail") === 0)){
-$count= 1;//jumlah
+//$count= 1;//jumlah
 //Generate Looping Data
-for ($i=0; $i < $count; $i++){ 
+for ($i=0; $i < 1; $i++){ 
 	$name=substr(str_shuffle('abcdefghijklmnopqrstuvwxyz'),0,6);
 	$shuffle=substr(str_shuffle('1234567890'),0,3);
 	$mail=array("@websock.eu","@mylicense.ga","@morex.ga","@hotmail.red","@accpremium.ga");
