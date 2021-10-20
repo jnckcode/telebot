@@ -24,7 +24,7 @@ sendMessage($chatId, "<i>Hello $firstname now you can use /cmd%0A%0ACreated By J
 }
 #----------- [ COMMANDS ] --------#
 elseif ((strpos($message, "!cmd") === 0)||(strpos($message, "/cmd") === 0)){
-sendMessage($chatId, "<i>BIN: /mail Generate Random Mail%0AINFO: /info Know Yourself%0ABase64 Encode: /encode64 YourTextHere%0ABase64 Decode: /decode64 YourTextHere%0AHEX2bin: /hexbin YourHexHere%0ABIN2hex: /binhex YourBinHere%0A%0ACreated By Jnckteam </i>");
+sendMessage($chatId, "<i>FakeMail: /mail Generate Random Mail%0AINFO: /info Know Yourself%0ABase64 Encode: /encode64 YourTextHere%0ABase64 Decode: /decode64 YourTextHere%0AHEX2bin: /hexbin YourHexHere%0ABIN2hex: /binhex YourBinHere%0A%0ACreated By Jnckteam </i>");
 }
 #------------[User Info]---------#
 elseif ((strpos($message, "!info") === 0)||(strpos($message, "/info") === 0)){
@@ -35,10 +35,10 @@ elseif ((strpos($message, "!mail") === 0)||(strpos($message, "/mail") === 0)){
 //$count= 1;//jumlah
 //Generate Looping Data
 for ($i=0; $i < 1; $i++){ 
-	$name=substr(str_shuffle('abcdefghijklmnopqrstuvwxyz'),0,6);
-	$shuffle=substr(str_shuffle('1234567890'),0,3);
+	$name=substr(str_shuffle('abcdefghijklmnopqrstuvwxyz1234567890'),0,6);
+	//$shuffle=substr(str_shuffle('1234567890'),0,3);
 	$mail=array("@websock.eu","@mylicense.ga","@morex.ga","@hotmail.red","@accpremium.ga");
-	$result=$name.$shuffle.$mail[array_rand($mail)]; //For CLi
+	$result=$name.$mail[array_rand($mail)]; //For CLi
 	//echo $result;
 	sendMessage($chatId, "<i>https://generator.email/$result</i>");
 }
