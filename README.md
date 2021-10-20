@@ -1,3 +1,3 @@
-# telebot
-Bot Tele Customable
-REV 0.1
+# Telebot
+Customable Bot for Jnckcode
+REV 0.4
