@@ -51,6 +51,18 @@ $dec = base64_decode($decode64);
 sendMessage($chatId, "<i>$dec</i>");
 }
 
+#---------------[Key-GEN]--------------#
+elseif ((strpos($message, "!ccleaner") === 0)||(strpos($message, "/ccleaner") === 0)){
+	for ($i=0; $i < 1; $i++) {
+$id1=substr(str_shuffle('ABC123GHIJKLMNOPQRSTUVWXYZDEF456789'), 0,4);
+$id2=substr(str_shuffle('123456GHIJKLMNOPQRSTUVWXYZABCDEF789'), 0,4);
+$id3=substr(str_shuffle('ABCDEFGHI34567OPQRSTUVWXYZ12JKLMN89'), 0,4);
+$id4=substr(str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789'), 0,1);
+   $pattern="C2YW-$id1-$id2-$id3-$id4"."ZPC";
+	sendMessage($chatId, "<i>$pattern</i>");
+}
+}
+
 #---------------[HEX]------------------#
 elseif ((strpos($message, "!hexbin") === 0)||(strpos($message, "/hexbin") === 0)){
 $hexbin = substr($message, 8);
