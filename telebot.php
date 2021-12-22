@@ -3,7 +3,7 @@
 
 #------------------[ Version 1.0 ] ------------------------#
 
-$botToken = "1925075909:AAHJTTWLcflCBJ2nG3-jLQzKf8GErLqvSgY"; # ENTER HERE BOT TOKEN
+$botToken = "1925075909:AAGcT6BJGyHsjMfGfI33W6bpusZByEqyo5w"; # ENTER HERE BOT TOKEN
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
