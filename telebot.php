@@ -53,7 +53,7 @@ sendMessage($chatId, "<i>$dec</i>");
 
 #---------------[Key-GEN]--------------#
 elseif ((strpos($message, "!ccleaner") === 0)||(strpos($message, "/ccleaner") === 0)){
-	for ($i=0; $i < 1; $i++) {
+	for ($i=0; $i < 2; $i++) {
 $id1=substr(str_shuffle('ABC123GHIJKLMNOPQRSTUVWXYZDEF456789'), 0,4);
 $id2=substr(str_shuffle('123456GHIJKLMNOPQRSTUVWXYZABCDEF789'), 0,4);
 $id3=substr(str_shuffle('ABCDEFGHI34567OPQRSTUVWXYZ12JKLMN89'), 0,4);
