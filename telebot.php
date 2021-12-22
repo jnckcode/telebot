@@ -59,8 +59,8 @@ $id2=substr(str_shuffle('123456GHIJKLMNOPQRSTUVWXYZABCDEF789'), 0,4);
 $id3=substr(str_shuffle('ABCDEFGHI34567OPQRSTUVWXYZ12JKLMN89'), 0,4);
 $id4=substr(str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789'), 0,1);
    $pattern="C2YW-$id1-$id2-$id3-$id4"."ZPC";
+   sendMessage($chatId, "<i>$pattern</i>");
 }
-	sendMessage($chatId, "<i>$pattern</i>");
 }
 
 #---------------[HEX]------------------#
