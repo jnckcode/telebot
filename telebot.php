@@ -74,7 +74,7 @@ $binhex = substr($message, 8);
 $hex2 = bin2hex($binhex);
 sendMessage($chatId, "<i>$hex2</i>");
 }
-
+}
 #---------------------------------------------[ RESPONSES ]------------------------------------#
 
 
